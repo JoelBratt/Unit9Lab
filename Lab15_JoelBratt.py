@@ -3,7 +3,7 @@ Joel Bratt
 the purpose of the program is to plot a square.
 7/20/2026
 """
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 import math
 
 x_list = []
@@ -16,3 +16,14 @@ for i in range(5):
     x_list.append(x)
     y_list.append(y)
 
+plot.plot(x_list, y_list, color="darkcyan", linestyle ="-", linewidth = 3 )
+
+plot.title("Making a Square")
+plot.xlabel('X-axis')
+plot.ylabel('Y-axis')
+
+plot.grid(True)
+plot.axis('equal')
+
+plot.savefig('Square.png')
+print("Square generated check the folder!")
